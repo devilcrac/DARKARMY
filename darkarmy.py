@@ -373,7 +373,7 @@ def scanusers():
         if '/' in users:
             users = users.replace('/', '')
         while len(users) > 2:
-            print users
+            print (users)
             resp = urllib2.urlopen(
                 site + '/cgi-sys/guestbook.cgi?user=%s' % users).read()
 
